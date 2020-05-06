@@ -16,6 +16,12 @@ fName = 'test.txt, test2.txt'
 
 fPath = 'C:\\The-Tech-Academy-Basic-Python-Projects\\'
 
+data = ["test.txt", "test2.txt"]
+for x in data:
+    print(x)
+    if x == "test2.txt":
+        break
+
 
 abPath = os.path.join(fPath, fName)
 print(abPath)
