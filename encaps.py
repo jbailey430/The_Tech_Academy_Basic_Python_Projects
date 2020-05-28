@@ -8,17 +8,17 @@ print(obj._protectedVar)
 
 
 
-class Protected1:
+class Private:
     def __init__(self):
-        self._privateVar = 15
+        self.__privateVar = 15
 
     def getPrivate(self):
-        print(self._privateVar)
+        print(self.__privateVar)
 
     def setPrivate(self, private):
-        self._privateVar = private
+        self.__privateVar = private
 
-obj = Protected1()
+obj = Private()
 obj.getPrivate()
 obj.setPrivate(23)
 obj.getPrivate()
